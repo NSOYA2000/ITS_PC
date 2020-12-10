@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.its-has-header {
+  top: 100px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+img[lazy=loading] {
+  display: block;
+  width: 70px !important;
+  height: 70px !important;
+  margin: 60px auto;
+  animation: rotate 0.8s ease-in;
+}
+img[lazy=error] {
+  display: block;
+  width: 70px !important;
+  height: 70px !important;
+  margin: 60px auto;
+}
+.case-content {
+  width: 1200px;
+  min-height: 400px;
+  overflow: hidden;
+  margin: 180px auto 20px auto;
+}
+.case-content .nodata {
+  width: 250px;
+  margin: 200px auto;
+}
+.case-content .nodata img {
+  width: 100%;
+}
+.case-content .nodata p {
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0;
+}
+.case-content .case-div {
+  display: inline-block;
+  float: left;
+  background: #1e1e1e;
+  transition: all .5s;
+  overflow: hidden;
+}
+.case-content .case-div .case-div-img {
+  width: 100%;
+  overflow: hidden;
+}
+.case-content .case-div:hover .shade {
+  opacity: 1;
+}
+.case-content .case-div .shade {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  transition: all .5s;
+}
+.case-content .case-div .shade p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 0 10px;
+}
+.case-content .advertisingDiv {
+  display: inline-block;
+  transition: all .5s;
+  overflow: hidden;
+}
+.case-content .advertisingDiv .advertisingDivsmall {
+  overflow: hidden;
+}
+.case-content .advertisingDiv .advertisingDivsmall .sort-p {
+  width: 100%;
+  margin: 10px 0;
+}
+.case-content .advertisingDiv .advertisingDivsmall .video-div {
+  width: 350px;
+  height: 250px;
+  margin: 0 75px 45px 0;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.case-content .advertisingDiv .advertisingDivsmall .video-div:nth-child(3n) {
+  margin: 0 0 45px 0;
+}
+.case-content .advertisingDiv .advertisingDivsmall .video-div .img-box {
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  background: #1e1e1e;
+}
+.case-content .advertisingDiv .advertisingDivsmall .video-div .img-box .video-div-img {
+  width: 350px;
+  height: 200px;
+}
+.case-content .advertisingDiv .advertisingDivsmall .video-div .play-icon {
+  display: block;
+  width: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.case-content .advertisingDiv .advertisingDivsmall .video-div .video-div-p {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  line-height: 50px;
+}
+.black-video {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
